@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 body {
     min-height: 100vh;
     display: grid;
@@ -15,26 +14,25 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 
-    padding: 24px;
+    padding: 1.5rem;
 
     color: #1F2E55;
-    font-size: 16px;
-
+    font-size: 1rem;
 }
 
 .card {
     width: 100%;
-    max-width: 450px;
+    max-width: 28.125rem;
 
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
 
     background-color: white;
-    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.13);
+    box-shadow: 0rem 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.13);
 }
 
 .card_body {
-    padding: 45px 48px;
+    padding: 2.8125rem 3rem;
 }
 
 .title {
@@ -42,37 +40,36 @@ body {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 900;
-    margin-bottom: 17px;
+    margin-bottom: 1.0625rem;
 }
 
 .title p {
     color: #717FA6;
     font-weight: 500;
-    line-height: 26px;
-    margin-bottom: 20px;
+    line-height: 1.625rem;
+    margin-bottom: 1.25rem;
 }
 
 .plan {
     background-color: #F7F9FF;
-    border-radius: 11px;
+    border-radius: 0.6875rem;
     display: flex;
-    padding: 25px 24px;
+    padding: 1.5625rem 1.5rem;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .plan .left {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .plan h2 {
     font-weight: 900;
-    margin-bottom: 6px;
-
+    margin-bottom: 0.375rem;
 }
 
 .plan p {
@@ -83,28 +80,44 @@ h1 {
 .plan a {
     color: #382AE1;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.plan a:hover {
+    color: #766CF1;
+    text-decoration: none;
 }
 
 .cta button {
     display: block;
     width: 100%;
-    padding: 16px 0px;
-    border-radius: 11px;
+    padding: 1rem 0rem;
+    border-radius: 0.6875rem;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 900;
 }
 
 .cta .payment {
     color: white;
     background-color: #382AE1;
-    margin-bottom: 16px;
-    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    margin-bottom: 1rem;
+    box-shadow: 0rem 1.25rem 1.25rem 0rem rgba(56, 42, 225, 0.19);
 }
+
+.cta .payment:hover {
+    background-color: #766CF1;
+}
+
 
 .cta .cancel {
     color: #717FA6;
     background-color: transparent;
 }
+
+.cta .cancel:hover {
+    color: #1F2E55;
+}
+
