@@ -1,44 +1,110 @@
 @import url('reset.css');
 
-:root {
-    /* Layout */
-    --mobile-width: 375px;
-    --desktop-width: 1440px;
-  
-    /* Primary Colors */
-    --pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%);
-  
-    /* Neutral Colors */
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --desaturated-blue: hsl(224, 23%, 55%);
-    --dark-blue: hsl(223, 47%, 23%);
-  
-    /* Typography */
-    --font-size-paragraph: 16px;
-    --font-family: 'Red Hat Display', sans-serif;
-    --font-weight-500: 500;
-    --font-weight-700: 700;
-    --font-weight-900: 900;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
-  body {
-    background:url('../images/pattern-background-desktop.svg');
+
+body {
+    min-height: 100vh;
     display: grid;
     place-content: center;
-    height: 100vh;
-    font-family: "Outfit", system-ui;
-    color: var(--soft-blue);
-    font-size: 1rem;
+
+    font-family: 'Red Hat Display', sans-serif;
+
+    background: url('../images/pattern-background-desktop.svg');
+    background-color: #E0E8FF;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding: 24px;
+
+    color: #1F2E55;
+    font-size: 16px;
+
 }
 
 .card {
-    border-radius: 0.9375rem;
-    max-width: 21.875rem;
-    padding: 1.5rem;
+    width: 100%;
+    max-width: 450px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-color: white;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.13);
+}
+
+.card_body {
+    padding: 45px 48px;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 17px;
+}
+
+.title p {
+    color: #717FA6;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.plan {
+    background-color: #F7F9FF;
+    border-radius: 11px;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    background-color: var(--very-dark-blue-card-bg);
+    padding: 25px 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.plan .left {
+    display: flex;
+    gap: 20px;
+}
+
+.plan h2 {
+    font-weight: 900;
+    margin-bottom: 6px;
+
+}
+
+.plan p {
+    color: #717FA6;
+    font-weight: 500;
+}
+
+.plan a {
+    color: #382AE1;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cta button {
+    display: block;
+    width: 100%;
+    padding: 16px 0px;
+    border-radius: 11px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.cta .payment {
+    color: white;
+    background-color: #382AE1;
+    margin-bottom: 16px;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.cta .cancel {
+    color: #717FA6;
+    background-color: transparent;
 }
